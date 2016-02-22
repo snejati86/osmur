@@ -23,3 +23,8 @@ func TestMasterWillNotRegisterMoreThanMax(t *testing.T) {
 		t.Error("Could register the second worker")
 	}
 }
+
+func TestMasterWillLoadConfiguration(t *testing.T){
+	master:= Master{}
+	master.init()
+}
